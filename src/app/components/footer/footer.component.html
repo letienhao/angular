@@ -1,0 +1,16 @@
+
+<div class="wrapper w-100">
+  <div class="row">
+    <div class="col">4 items</div>
+    <div class="group-button col-6 d-flex align-items-center justify-content-center gap-4">
+       <button type="button" class="filter-btn" *ngFor="let btn of filterButton" [ngClass]="{
+        'active' : btn.isActive
+       }">
+        {{btn.label}}
+       </button>
+    </div>
+    <div class="col">
+      <button class="filter-clear clear-completed-btn text-end">Clear filter</button>
+    </div>
+  </div>
+</div>
